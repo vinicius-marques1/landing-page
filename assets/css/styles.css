@@ -101,7 +101,52 @@
 .top3-content {
     height: 100vh;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     text-align: center;
+}
+
+#trabalhos {
+    min-height: 120vh;
+}
+
+.trabalhos-content {
+    min-height: 120vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.trabalhos-content h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+p.trabalhos-intro {
+    padding-bottom: 5rem;
+}
+
+.top3-trabalhos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: trabalhos-counter;
+}
+
+.top3-trabalhos h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.top3-trabalhos h3::before {
+    counter-increment: trabalhos-counter;
+    content: counter(trabalhos-counter);
+    position: absolute;
+    top: -3rem;
+    left: -2rem;
+    font-size: 8rem;
+    font-style: italic;
+    transform: rotate(5deg);
 }
