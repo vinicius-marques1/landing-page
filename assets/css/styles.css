@@ -167,3 +167,73 @@ p.trabalhos-intro {
 .galeria-image img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form fieldset {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.contact-form fieldset legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    background: none;
+    color: var(--white-color);
+    border: 0.5rem solid var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    border-color: var(--primary-color);
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: rgb(117, 114, 114);
+    font-size: 1.5rem;
+}
+
+.footer {
+    text-align: center;
+    color: inherit;
+}
+
+.footer p {
+    margin: 0;
+    padding: var(--gap);
+}
