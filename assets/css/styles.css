@@ -237,3 +237,25 @@ body .full-width {
     margin: 0;
     padding: var(--gap);
 }
+
+@media (max-width: 800px) {
+    .intro-content, .top3-trabalhos {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-image {
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .galeria-image img {
+        width: 100%;
+    }
+
+    .contact-form {
+        grid-column: span 1;
+    }
+
+
+}
